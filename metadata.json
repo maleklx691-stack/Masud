@@ -1,0 +1,6 @@
+{
+  "name": "Aviator Pro NextGen",
+  "description": "উন্নত মানের এভিয়েটর ক্র্যাশ, সুপার এস (Super Ace ১০২৪-ওয়েজ কার্ড স্লট), লাক্সারি ৭৭৭ স্লট ও বিগ/স্মল কালার ট্রেডিং গেম সিস্টেম।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
