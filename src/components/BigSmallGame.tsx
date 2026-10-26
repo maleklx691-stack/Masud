@@ -9,6 +9,7 @@ import {
   ROUND_DURATION_SEC 
 } from '../utils/bigSmallEngine';
 import confetti from 'canvas-confetti';
+import bigSmallLogo from '../assets/images/bigsmall_game_logo_1793032287531.jpg';
 import { 
   Clock, 
   Sparkles, 
@@ -195,10 +196,13 @@ export const BigSmallGame: React.FC<BigSmallGameProps> = ({ user, onUserUpdated,
       <div className="rounded-2xl bg-gradient-to-r from-blue-950/60 via-slate-900 to-indigo-950/60 border border-blue-500/30 p-4 sm:p-5 shadow-2xl relative overflow-hidden backdrop-blur-md">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-3">
-            <div className="h-12 w-12 rounded-2xl bg-gradient-to-tr from-blue-600 via-indigo-500 to-amber-400 p-0.5 shadow-[0_0_20px_rgba(59,130,246,0.5)]">
-              <div className="h-full w-full bg-slate-950 rounded-[14px] flex items-center justify-center">
-                <Sparkles className="h-6 w-6 text-amber-300 animate-pulse" />
-              </div>
+            <div className="relative h-14 w-14 shrink-0 rounded-2xl overflow-hidden bg-gradient-to-tr from-blue-600 via-indigo-500 to-amber-400 p-0.5 shadow-[0_0_25px_rgba(59,130,246,0.6)]">
+              <img
+                src={bigSmallLogo}
+                alt="Big Small Logo"
+                className="h-full w-full object-cover rounded-[14px]"
+                referrerPolicy="no-referrer"
+              />
             </div>
             <div>
               <div className="flex items-center gap-2">

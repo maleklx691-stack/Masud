@@ -3,6 +3,7 @@ import { User } from '../types';
 import { Plane, Volume2, VolumeX, Wallet, Gift, History, Shield, LogOut, UserCircle, Sparkles, Binary, Crown, Award } from 'lucide-react';
 import { sounds } from '../utils/audio';
 import { getVipInfo } from '../utils/vip';
+import aviatorLogo from '../assets/images/aviator_game_logo_1793032284829.jpg';
 
 interface NavbarProps {
   user: User;
@@ -47,7 +48,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         >
           <div className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-xl overflow-hidden border border-rose-500/50 bg-black shadow-[0_0_18px_rgba(225,29,72,0.4)] group-hover:scale-105 group-hover:border-rose-400 transition-all">
             <img 
-              src="/logo.jpg" 
+              src={aviatorLogo} 
               alt="Aviator Logo" 
               className="h-full w-full object-cover group-hover:scale-110 transition-transform"
               referrerPolicy="no-referrer"
@@ -58,8 +59,11 @@ export const Navbar: React.FC<NavbarProps> = ({
               <span className="text-lg sm:text-xl font-extrabold italic tracking-wider text-rose-500 font-numeric">
                 AVIATOR
               </span>
-              <span className="rounded bg-rose-500/20 px-1.5 py-0.5 text-[10px] font-bold text-rose-400 border border-rose-500/30">
-                PRO NEXTGEN
+              <span className="rounded bg-rose-500/20 px-1.5 py-0.5 text-[10px] font-bold text-rose-400 border border-rose-500/30 hidden xs:inline">
+                PRO
+              </span>
+              <span className="rounded bg-gradient-to-r from-amber-400 via-rose-500 to-amber-400 px-1.5 py-0.5 text-[9px] font-black text-slate-950 shadow-[0_0_12px_rgba(245,158,11,0.7)] animate-pulse">
+                8K UHD
               </span>
             </div>
             <span className="text-[9px] text-slate-400 tracking-wider">OFFICIAL CRASH CASINO</span>

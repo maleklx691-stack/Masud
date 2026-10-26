@@ -1,6 +1,9 @@
 import React from 'react';
 import { Plane, Sparkles, Binary, Flame, ArrowRight, Trophy, Users, Zap } from 'lucide-react';
-import aceCardImg from '../assets/images/ace_spade_card_1789553636721.jpg';
+import aviatorLogo from '../assets/images/aviator_game_logo_1793032284829.jpg';
+import superAceLogo from '../assets/images/superace_game_logo_1793032285940.jpg';
+import slotsLogo from '../assets/images/slots_jackpot_logo_1793032288191.jpg';
+import bigSmallLogo from '../assets/images/bigsmall_game_logo_1793032287531.jpg';
 
 interface GameLobbyBarProps {
   activeTab: 'game' | 'slots' | 'bigsmall' | 'superace' | 'wallet' | 'referral' | 'history' | 'profile' | 'admin';
@@ -18,10 +21,10 @@ export const GameLobbyBar: React.FC<GameLobbyBarProps> = ({ activeTab, setActive
       onlineCount: '১,৪২০+ সক্রিয়',
       rtp: '৯৯.৭% RTP',
       icon: (
-        <div className="relative h-14 w-14 rounded-2xl bg-gradient-to-tr from-rose-600 via-red-500 to-rose-400 p-0.5 shadow-[0_0_25px_rgba(225,29,72,0.6)] flex items-center justify-center overflow-hidden shrink-0">
+        <div className="relative h-14 w-14 rounded-2xl bg-gradient-to-tr from-rose-600 via-red-500 to-rose-400 p-0.5 shadow-[0_0_25px_rgba(225,29,72,0.6)] flex items-center justify-center overflow-hidden shrink-0 group-hover:scale-105 transition-transform">
           <img
-            src="/logo.jpg"
-            alt="Aviator"
+            src={aviatorLogo}
+            alt="Aviator Pro"
             className="h-full w-full object-cover rounded-[14px]"
             referrerPolicy="no-referrer"
           />
@@ -42,10 +45,10 @@ export const GameLobbyBar: React.FC<GameLobbyBarProps> = ({ activeTab, setActive
       onlineCount: '১,৭৫০+ সক্রিয়',
       rtp: '৯৯.৭% RTP',
       icon: (
-        <div className="relative h-14 w-14 rounded-2xl bg-gradient-to-tr from-amber-500 via-rose-600 to-yellow-400 p-0.5 shadow-[0_0_25px_rgba(245,158,11,0.6)] flex items-center justify-center overflow-hidden shrink-0">
+        <div className="relative h-14 w-14 rounded-2xl bg-gradient-to-tr from-amber-500 via-rose-600 to-yellow-400 p-0.5 shadow-[0_0_25px_rgba(245,158,11,0.6)] flex items-center justify-center overflow-hidden shrink-0 group-hover:scale-105 transition-transform">
           <img
-            src={aceCardImg}
-            alt="Super Ace Card"
+            src={superAceLogo}
+            alt="Super Ace"
             className="h-full w-full object-cover rounded-[14px]"
             referrerPolicy="no-referrer"
           />
@@ -66,13 +69,13 @@ export const GameLobbyBar: React.FC<GameLobbyBarProps> = ({ activeTab, setActive
       onlineCount: '৮৯০+ সক্রিয়',
       rtp: '৯৯.৪% RTP',
       icon: (
-        <div className="relative h-14 w-14 rounded-2xl bg-gradient-to-tr from-amber-500 via-yellow-400 to-amber-600 p-0.5 shadow-[0_0_25px_rgba(245,158,11,0.6)] flex items-center justify-center overflow-hidden shrink-0">
-          <div className="h-full w-full bg-gradient-to-b from-[#2a1705] to-[#0d0702] rounded-[14px] flex flex-col items-center justify-center text-center p-1">
-            <span className="text-base font-black tracking-tighter text-amber-300 font-numeric leading-none drop-shadow-[0_0_8px_rgba(245,158,11,0.8)]">
-              777
-            </span>
-            <Sparkles className="h-3.5 w-3.5 text-yellow-300 animate-pulse mt-0.5" />
-          </div>
+        <div className="relative h-14 w-14 rounded-2xl bg-gradient-to-tr from-amber-500 via-yellow-400 to-amber-600 p-0.5 shadow-[0_0_25px_rgba(245,158,11,0.6)] flex items-center justify-center overflow-hidden shrink-0 group-hover:scale-105 transition-transform">
+          <img
+            src={slotsLogo}
+            alt="Royal 777 Slots"
+            className="h-full w-full object-cover rounded-[14px]"
+            referrerPolicy="no-referrer"
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-white/20 pointer-events-none" />
         </div>
       ),
@@ -90,15 +93,13 @@ export const GameLobbyBar: React.FC<GameLobbyBarProps> = ({ activeTab, setActive
       onlineCount: '২,১০০+ সক্রিয়',
       rtp: '৯৯.৬% RTP',
       icon: (
-        <div className="relative h-14 w-14 rounded-2xl bg-gradient-to-tr from-blue-500 via-indigo-500 to-cyan-400 p-0.5 shadow-[0_0_25px_rgba(59,130,246,0.6)] flex items-center justify-center overflow-hidden shrink-0">
-          <div className="h-full w-full bg-gradient-to-b from-[#081734] to-[#040c1c] rounded-[14px] flex flex-col items-center justify-center text-center p-1">
-            <div className="flex items-center gap-0.5 font-black text-sm drop-shadow-[0_0_6px_rgba(59,130,246,0.8)]">
-              <span className="text-amber-400 font-numeric">B</span>
-              <span className="text-slate-400 text-[11px]">/</span>
-              <span className="text-cyan-400 font-numeric">S</span>
-            </div>
-            <Binary className="h-3.5 w-3.5 text-cyan-300 animate-pulse mt-0.5" />
-          </div>
+        <div className="relative h-14 w-14 rounded-2xl bg-gradient-to-tr from-blue-500 via-indigo-500 to-cyan-400 p-0.5 shadow-[0_0_25px_rgba(59,130,246,0.6)] flex items-center justify-center overflow-hidden shrink-0 group-hover:scale-105 transition-transform">
+          <img
+            src={bigSmallLogo}
+            alt="Big Small Wingo"
+            className="h-full w-full object-cover rounded-[14px]"
+            referrerPolicy="no-referrer"
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-white/20 pointer-events-none" />
         </div>
       ),

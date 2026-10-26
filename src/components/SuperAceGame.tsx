@@ -28,6 +28,7 @@ import {
   Eye
 } from 'lucide-react';
 
+import superAceLogo from '../assets/images/superace_game_logo_1793032285940.jpg';
 import aceCardImg from '../assets/images/ace_spade_card_1789553636721.jpg';
 import kingCardImg from '../assets/images/king_royal_card_1789553655643.jpg';
 import queenCardImg from '../assets/images/queen_royal_card_1789553681101.jpg';
@@ -728,13 +729,13 @@ export const SuperAceGame: React.FC<SuperAceGameProps> = ({
       {/* Top Header & Ticker Bar */}
       <div className="flex items-center justify-between bg-gradient-to-r from-[#170a14] via-[#1f0e1a] to-[#120610] p-3 sm:p-4 rounded-2xl border border-rose-500/30 shadow-xl">
         <div className="flex items-center gap-3">
-          <div className="relative h-11 w-11 sm:h-12 sm:w-12 rounded-2xl bg-gradient-to-tr from-amber-500 via-rose-600 to-yellow-400 p-0.5 shadow-[0_0_20px_rgba(244,63,94,0.6)] flex items-center justify-center overflow-hidden shrink-0">
-            <div className="h-full w-full bg-gradient-to-b from-[#2b0c16] to-[#0d0306] rounded-[14px] flex flex-col items-center justify-center">
-              <span className="text-base sm:text-lg font-black text-amber-300 font-numeric leading-none">
-                ACE
-              </span>
-              <Sparkles className="h-3 w-3 text-yellow-300 mt-0.5" />
-            </div>
+          <div className="relative h-14 w-14 shrink-0 rounded-2xl overflow-hidden bg-gradient-to-tr from-amber-500 via-rose-600 to-yellow-400 p-0.5 shadow-[0_0_25px_rgba(245,158,11,0.6)]">
+            <img
+              src={superAceLogo}
+              alt="Super Ace Logo"
+              className="h-full w-full object-cover rounded-[14px]"
+              referrerPolicy="no-referrer"
+            />
           </div>
           <div>
             <div className="flex items-center gap-2">

@@ -3,6 +3,7 @@ import { User, BetRecord } from '../types';
 import { storage } from '../utils/storage';
 import { sounds } from '../utils/audio';
 import confetti from 'canvas-confetti';
+import slotsLogo from '../assets/images/slots_jackpot_logo_1793032288191.jpg';
 import { 
   Sparkles, 
   RotateCw, 
@@ -323,8 +324,13 @@ export const SlotGame: React.FC<SlotGameProps> = ({ user, onUserUpdated, onOpenW
         <div className="absolute -top-16 -right-16 w-52 h-52 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500 to-rose-600 shadow-[0_0_20px_rgba(245,158,11,0.5)] border border-amber-300/40">
-              <Sparkles className="h-6 w-6 text-yellow-100 animate-pulse" />
+            <div className="relative h-14 w-14 shrink-0 rounded-2xl overflow-hidden bg-gradient-to-br from-amber-500 to-rose-600 shadow-[0_0_25px_rgba(245,158,11,0.6)] border border-amber-300/40 p-0.5">
+              <img
+                src={slotsLogo}
+                alt="Royal 777 Slots Logo"
+                className="h-full w-full object-cover rounded-[14px]"
+                referrerPolicy="no-referrer"
+              />
             </div>
             <div>
               <div className="flex items-center gap-2">

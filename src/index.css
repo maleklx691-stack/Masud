@@ -5,6 +5,14 @@
     font-family: 'Hind Siliguri', system-ui, -apple-system, sans-serif;
     user-select: none;
     background-color: #060910;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  img, canvas {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: high-quality;
   }
 }
 
